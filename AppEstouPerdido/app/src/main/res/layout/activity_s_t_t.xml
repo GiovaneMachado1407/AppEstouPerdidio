@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#368802"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingTop="20dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="20dp"
+    tools:context=".ActivitySTT">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:gravity="center"
+        android:text="Localizador de Celular por Voz"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="80"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/android" />
+
+    <TextView
+        android:id="@+id/txtV1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="20"
+        android:gravity="center_horizontal|center_vertical"
+        android:scrollbars="vertical"
+        android:text='Para encontrar seu telefone basta ativar o microfone e falar "Cadê você". Para encerrar a música você tem que ativar o microfone e falar falar "Achei" ou clicar em Desativar Alarme a música'
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/edtSTT"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="30"
+        android:scrollbars="vertical"
+        android:textColor="@android:color/background_dark" />
+
+    <Button
+        android:id="@+id/btnAtivar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:backgroundTint="#699735"
+        android:text="Ativar Localizador"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_dark" />
+
+    <Button
+        android:id="@+id/btnDesativar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:backgroundTint="#699735"
+        android:text="Desativar Localizador"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_dark" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
